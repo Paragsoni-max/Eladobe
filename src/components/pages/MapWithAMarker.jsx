@@ -21,17 +21,17 @@ const MapWithAMarker = () => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          alignItems: "center",
+          textAlign: "center",
           height: "200px",
           width: "98vw",
           backgroundColor: "#000000",
-backgroundImage: "linear-gradient(147deg, #000000 0%, #04619f 74%)",
+          backgroundImage: "linear-gradient(147deg, #000000 0%, #04619f 74%)",
     
           margin:"20px 5px"
         }}
       >
-        <h1 style={{fontSize:"30px",color:"white",margin:"20px 0",fontWeight:"700",letterSpacing:"5px"}}>Find Us..</h1>
-        <h1 style={{fontSize:"30px",color:"white",fontWeight:"700",letterSpacing:"5px"}}>Or Call - 000000000</h1>
+        <h1 style={{fontSize:"25px",color:"white",margin:"20px 0",fontWeight:"700",letterSpacing:"5px"}}>Find Us..</h1>
+        <h1 style={{fontSize:"25px",color:"white",fontWeight:"700",letterSpacing:"5px"}}>Or Call - 000000000</h1>
       </div>
       <div
         style={{

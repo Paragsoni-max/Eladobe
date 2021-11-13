@@ -16,7 +16,7 @@ const Navbar = () => {
         <>
         
         <header>
-            <h1 className="logo" style={style}>A-G</h1>
+            <h1 className="logo" style={style}>ARYAN-GROUP</h1>
             <input type="checkbox" id="nav-toggle" className="nav-toggle"/>
             <nav>
                 <ul>

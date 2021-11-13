@@ -1,15 +1,16 @@
-
-import "../styling/header.css"
+import "../styling/header.css";
 
 const Header = () => {
-    return (
-        <>
-            <div className="header">
+  return (
+    <>
+      <div className="header">
+        <div className="heading">
+          <h1>ARYAN</h1>
+          <h1>PACKERS AND MOVERS</h1>
+        </div>
+      </div>
+    </>
+  );
+};
 
-            </div>
-        </>
-            
-    )
-}
-
-export default Header
+export default Header;

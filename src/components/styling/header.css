@@ -2,8 +2,36 @@
     width:98vw;
     height:58vh;
     margin:20px 5px;
-    background: url(../../files/transport.jpg);
+    background: url(../../files/transport1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.heading{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.678);
+    align-items: center;
+    padding:20px;
+    border-radius: 10px;
+}
+
+.heading >h1{
+    color: rgba(255, 255, 255, 0.938);
+    font-size: 40px;
+    font-weight: 750;
+
+}
+
+
+@media (max-width:500px){
+    .heading{
+        text-align: center;
+    }    
 }

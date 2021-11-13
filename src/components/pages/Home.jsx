@@ -3,6 +3,7 @@ import "../styling/home.css"
 import MapWithAMarker from './MapWithAMarker'
 import HeaderBottom from './HeaderBottom'
 import Header from './Header'
+import Locations from './Locations'
 
 
 
@@ -14,7 +15,7 @@ const Home = () => {
         <Header/>
             <HeaderBottom/>
             <MapWithAMarker/>
-            
+            <Locations/>
         </>
     )
 }
