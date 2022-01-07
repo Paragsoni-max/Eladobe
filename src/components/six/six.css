@@ -1,0 +1,49 @@
+.six_container{
+    width:100vw;
+    height:80vh;
+    background:linear-gradient(rgba(57, 150, 57, 0.9),rgba(0,128,0,0.7)), url("../../images/balcony.jpg");
+ background-position:center;
+  background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.six_wrapper{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.six_wrapper img{
+    width:220px;
+    height:325px;
+}
+
+
+
+
+.six_wrapper .six_content{
+    width:40%;
+    padding: 20px;
+}
+
+.six_wrapper .six_content h1{
+    font-family: Merienda;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.six_wrapper .six_content h5{
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}

@@ -1,0 +1,53 @@
+.five_container {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.five_container img{
+  width:200px;
+  height:300px;
+}
+
+.five_wrapper {
+  margin:30px 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.five_wrapper h1 {
+  font-family: Merienda;
+  font-style: normal;
+  font-weight: bold;
+  color: rgb(0, 105, 0);
+  font-size: 30px;
+  /* margin: 20px 0; */
+  text-align: center;
+  line-height: 50px;
+}
+
+.five_wrapper h1:nth-child(3){
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 800;
+  color: #ce1125;
+  font-size: 30px;
+  margin: 25px 0;
+  text-align: center;
+}
+
+
+.five_wrapper a {
+  padding: 5px 40px;
+  margin: 10px 0;
+  background: #ce1125;
+  border-radius: 42px;
+  color: #fff;
+  font-size: 18px;
+}

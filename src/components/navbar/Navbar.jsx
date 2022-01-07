@@ -1,38 +1,41 @@
 import "./navbar.css"
 import React from 'react'
 
-import {Link} from "react-router-dom";
 
-const style = {
-    color:"rgb(236, 236, 236)",
-    fontWeight: "700",
-    paddingTop: "10px",
-    fontSize:"25px"
-}
+
+
 
 
 const Navbar = () => {
     return (
-        <>
+        <div className="Nav_container">
         
-        <header>
-            <h1 className="logo" style={style}>ARYAN-GROUP</h1>
-            <input type="checkbox" id="nav-toggle" className="nav-toggle"/>
+        <div className="first">
+            <h1 className="logo">El Adobe Cafe</h1>
+        </div>
+
+        
             <nav>
                 <ul>
-                <li><Link className="a" to="/">Home</Link></li>
-                <li><Link className="a" to="/about">About</Link></li>
-                <li><Link className="a" to="/service">Services</Link></li>
-                <li><Link className="a" to="/contact">Contact</Link></li>
+                <li><a className="a" href="/">Home</a></li>
+                <li><a className="a" href="/about">About Us</a></li>
+                <li><a className="a" href="/service">Menu</a></li>
+                <li><a className="a" href="/contact">Catering & Events</a></li>
+                <li><a className="a" href="/contact">Giving Back</a></li>
+                <li><a className="a" href="/contact">Contact Us</a></li>
                 </ul>
             </nav>
-            <label for="nav-toggle" className="nav-toggle-label">
-                <span></span>
-            </label>
-        </header>
-  
-        </>
-    )
+        
+        <div className="last">
+            <a href="/">Order Online</a>
+        </div>
+        </div>
+)
 }
+
+            
+            
+        
+  
 
 export default Navbar

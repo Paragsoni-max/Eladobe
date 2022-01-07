@@ -1,45 +1,29 @@
-import './App.css';
-import Navbar from './components/navbar/Navbar';
-import Home from "./components/pages/Home";
-import About from "./components/pages/About";
-import Contact from "./components/pages/Contact";
-import Service from "./components/pages/Service";
-import Footer from './components/pages/Footer';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
-import Upper from './components/pages/Upper';
-
+import "./App.css";
+import Five from "./components/five/Five";
+import Footer from "./components/footer/Footer";
+import Four from "./components/four/Four";
+import Header from "./components/header/Header";
+import Navbar from "./components/navbar/Navbar";
+import One from "./components/one/One";
+import Seven from "./components/seven/Seven";
+import Six from "./components/six/Six";
+import Third from "./components/third/Third";
+import Two from "./components/two/Two";
 
 function App() {
   return (
     <>
-    <Upper/>
-    <Router>
-    <Navbar/>
-
-    <Switch>
-            <Route exact path="/">
-                <Home />
-            </Route>
-            <Route exact path="/about">
-                <About />
-            </Route>
-            <Route exact path="/service">
-                <Service />
-            </Route>
-            <Route exact path="/contact">
-                <Contact />
-            </Route>
-            </Switch>
-        
-    <Footer/>
-    </Router>
+      <Navbar />
+      <Header />
+      <One />
+      <Two />
+      <Third />
+      <Four />
+      <Five />
+      <Six />
+      <Seven />
+      <Footer />
     </>
   );
 }
 export default App;
-      
-

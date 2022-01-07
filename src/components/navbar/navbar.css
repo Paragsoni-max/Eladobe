@@ -1,179 +1,112 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,600");
-
-
-/* navigation styles start here */
-
-header {
-  background-color: #000000;
-  background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
-  text-align: center;
-  position: sticky;
-  z-index: 999;
-  width: 100%;
-  height: 50px;
-}
-
-/* changed this from the tutorial video to
-   allow it to gain focus, making it tabbable */
-.nav-toggle {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-}
-
-.nav-toggle:focus ~ .nav-toggle-label {
-  outline: 3px solid rgba(lightblue, 0.75);
-}
-
-.nav-toggle-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 1em;
-  height: 100%;
+.Nav_container {
+  width: 100vw;
+  height: 120px;
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  padding: 50px;
 }
 
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  background: white;
-  height: 2px;
-  width: 2em;
-  border-radius: 2px;
-  position: relative;
+.Nav_container .first {
+  flex: 2;
 }
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content: "";
-  position: absolute;
-}
-
-.nav-toggle-label span::before {
-  bottom: 7px;
-}
-
-.nav-toggle-label span::after {
-  top: 7px;
-}
-
-nav {
-  position: absolute;
-  text-align: left;
-  top: 100%;
-  left: 0;
-  background-color: #000000;
-  background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
-  width: 100%;
-  transform: scale(1, 0);
-  transform-origin: top;
-  transition: transform 400ms ease-in-out;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  margin-bottom: 1em;
-  margin-left: 1em;
-}
-.logo {
-  color: rgb(236, 236, 236);
+.first h1 {
+  font-size: x-large;
   font-weight: 700;
-  padding-top: 10px;
-  /* font-size:larger; */
+  color: green;
 }
 
-nav a {
-  color: rgb(236, 236, 236);
-  text-decoration: none;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  opacity: 0;
-  transition: opacity 150ms ease-in-out;
-  font-weight: 600;
+.Nav_container nav {
+  flex: 8;
 }
 
-nav a:hover {
-  color: rgb(255, 255, 255);
+.Nav_container nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+}
+.Nav_container nav ul li {
+  margin: 0 15px;
+}
+.Nav_container nav ul li a {
+  font-size: 16px;
+  font-weight: 640;
 }
 
-.nav-toggle:checked ~ nav {
-  transform: scale(1, 1);
+.Nav_container .last {
+  flex: 2;
+  text-align: center;
+  padding: 30px 0;
+}
+.last a {
+  padding: 15px 50px;
+  background: #ce1125;
+  border-radius: 42px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
 }
 
-.nav-toggle:checked ~ nav a {
-  opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms;
-}
-
-@media screen and (min-width: 800px) {
-  .nav-toggle-label {
+@media screen and (max-width: 1080px) {
+  .Nav_container .first {
     display: none;
   }
 
-  header {
-    display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  .Nav_container nav {
+    flex: 6;
   }
 
-  .logo {
-    grid-column: 2 / 3;
-  }
-
-  nav {
-    all: unset; /* this causes issues with Edge, since it's unsupported */
-
-    /* the following lines are not from my video, but add Edge support */
-    position: relative;
-    text-align: left;
-    transition: none;
-    transform: scale(1, 1);
-    background: none;
-    top: initial;
-    left: initial;
-    /* end Edge support stuff */
-
-    grid-column: 3 / 4;
+  .Nav_container nav ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
+    padding: 48px 5px;
+  }
+  .Nav_container .last {
+    flex: 2;
   }
 
-  nav ul {
+  .last a {
+    padding: 10px 30px;
+    background: #ce1125;
+    border-radius: 42px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .Nav_container  {
+    height: 60px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
   }
+  .Nav_container nav{
+    height: auto;
+    width: auto;
+  }
+  .Nav_container nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 5px;
+    margin-top: 20px;
+  }
+    .Nav_container .last {
+      flex: 2;
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+  .last a {
+    background: #ce1125;
+    border-radius: 42px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;}
 
-  nav li {
-    margin-left: 3em;
-    margin-bottom: 0;
-  }
-
-  nav a {
-    opacity: 1;
-    position: relative;
-  }
-
-  nav a::before {
-    content: "";
-    display: block;
-    height: 5px;
-    background: black;
-    position: absolute;
-    top: -0.75em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
-  }
-
-  nav a:hover::before {
-    transform: scale(1, 1);
-  }
 }

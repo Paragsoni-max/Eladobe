@@ -1,0 +1,52 @@
+.seven_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.seven_wrapper {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.seven_wrapper .seven_heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.seven_wrapper .seven_heading span {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+}
+
+.seven_wrapper .seven_heading h1 {
+  font-family: Merienda;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+
+  text-align: center;
+}
+
+.seven_wrapper .seven_social_ss{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.seven_wrapper .seven_social_ss .img{
+    width:270px;
+    height: 400px;
+    background: #FFFFFF;
+    object-fit: cover;
+box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);}
