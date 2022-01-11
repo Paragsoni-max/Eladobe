@@ -5,7 +5,6 @@ import one_img_2 from "../../images/one_img_2.jpg"
 const One = () => {
   return (
     <div className="one_container">
-      <div className="one_wrapper">
         <div className="one_left">
           <a href="/">El Adobe</a>
           <h1>OUR STORY</h1>
@@ -23,7 +22,7 @@ const One = () => {
         </div>
         {/* <button className="bottom_btn">Read More</button> */}
       </div>
-    </div>
+    
   );
 };
 

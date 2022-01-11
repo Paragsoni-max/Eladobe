@@ -5,7 +5,7 @@ import "./third.css";
 const Third = () => {
   return (
     <div className="third_container">
-      <div className="third_wrapper">
+      
         <div className="third_left"></div>
         <div className="third_middle">
           <div className="third_middle_top">
@@ -62,7 +62,7 @@ const Third = () => {
         </div>
         <div className="third_right"></div>
       </div>
-    </div>
+    
   );
 };
 

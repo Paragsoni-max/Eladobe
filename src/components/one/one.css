@@ -1,130 +1,156 @@
 .one_container {
-  max-height: 100vh;
+  height: 100vh;
   width: 100vw;
-}
-
-.one_wrapper {
-  width: 65%;
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
-  /* margin: auto; */
-  margin: 50px auto;
+  justify-content: center;
+  align-items: center;
+  margin:1rem  0;
+
 }
 
-.one_wrapper .one_left {
-  width: 50%;
+.one_container .one_left {
+  /* height: 70%; */
+  width: 35%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
-  padding: 0px 10px;
+  justify-content: space-around;
+  padding: 0 1rem;
 }
 
-.one_wrapper .one_left a {
-  padding: 5px 25px;
-  margin: 10px 0;
+.one_container .one_left a {
+  padding: .5rem 2.5rem;
+  margin: 1rem 0;
   background: #ce1125;
   border-radius: 42px;
   color: #fff;
-  font-size:18px;
+  font-size:1.8rem;
   font-weight: bold;
 }
 
-.one_wrapper .one_left h1 {
+.one_container .one_left h1 {
   
   font-family: Merienda;
   font-weight: 600;
-  font-size: 45px;
-  line-height: 92px;
+  font-size: 4.5rem;
+  line-height: 9.2rem;
 
   color: #2b2b2b;
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.one_wrapper .one_left p {
+.one_container .one_left p {
   font-style: normal;
   /* width: 300px; */
   font-weight: 300;
   /* text-align:center; */
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 35px;
 }
 
-.one_wrapper .one_left button {
-  font-size: 16px;
+.one_container .one_left button {
+  font-size: 1.6rem;
   border-radius: 42px;
   font-weight: bold;
   border: 1.5px solid #ce1125;
-  padding: 6px 40px;
-  margin-top: 20px;
+  padding: .6rem 4.0rem;
+  margin-top: 2.0rem;
 }
 
-.one_wrapper .one_right {
-  width: 50%;
+.one_container .one_right {
+  width: 35%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.one_wrapper .one_right .one_right_image {
-  width: 250px;
+.one_container .one_right .one_right_image {
+  width: 280px;
   height: 200px;
   object-fit: cover;
   background-color: grey;
-  margin: 8px 0;
+  margin: .8rem 0;
 }
 
-@media screen and (max-width:1024px) {
-  .one_wrapper {
-    width: 65%;
+@media screen and (max-width: 1024px) {
+  html{
+    font-size: 55%;
+  }
+  .one_container{
+    height :auto;
+    margin:8rem 0;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    /* margin: auto; */
-    margin: 50px auto;
-    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .one_container .one_left{
+   width: 40%; 
+  }
+}
+@media screen and (max-width: 850px) {
+  html{
+    font-size: 50%;
+  }
+  .one_container .one_left{
+    width: 50%;
+    padding: 0;
+    justify-content: space-evenly
   }
   
-.one_wrapper .one_left {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content: space-between;
-  padding: 0px 10px;
-  margin-bottom: 20px;
-}
-.one_wrapper .one_right {
-  width: 100%;
-  display: flex;
-flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
-.one_wrapper .one_right .one_right_image {
-  width: 250px;
-  height: 200px;
-  object-fit: cover;
-  background-color: grey;
-  margin: 10px 20px;
-}
-.one_wrapper .one_left button {
-  display: none;
-}
-.one_wrapper .bottom_btn{
-  font-size: 16px;
-  border-radius: 42px;
-  display: block;
-  font-weight: bold;
-  border: 1.5px solid #ce1125;
-  padding: 6px 20px;
-  width: fit-content;
-  margin:0px auto;
-  margin-top: 20px;
+@media screen and (max-width: 600px) {
+  html{
+    font-size: 40%;
+  }
+  .one_container{
+    height : auto
+  }
+  .one_container .one_left {
+    width: 100%;
+    align-items: center;
+    padding: 5rem 3rem;
+  }
+  .one_container .one_left p {
+    font-size: 2.5rem;
+  }
+  
+  .one_container .one_right{
+    display: none;
+  }
 }
 
+@media screen and (max-width: 480px) {
+  html{
+    font-size: 30%;
+  }
+  .one_container{
+    height : 45vh;
+    /* background-color: aqua; */
+    margin: 5rem 0;
+    
+  }
+  .one_container .one_left p {
+    font-size: 3rem;
+    line-height: 30px;
+    width: 95%;
+  }
+  .one_container .one_left a , .one_container .one_left button{
+    font-size: 3rem;
+    padding: 1rem 2rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  html{
+    font-size: 30%;
+  }
+  .header_container{
+    height : 40vh
+  }
+  .one_container .one_left p {
+    font-size: 3.5rem;
+    line-height: 30px;
+  }
 }

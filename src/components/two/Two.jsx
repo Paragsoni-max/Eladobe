@@ -5,9 +5,9 @@ const Two = () => {
   return (
     <div className="two_container">
       <div className="two_left">
-        <FaWineGlassAlt size="100px" className="glass" color="whitesmoke" />
-        <FaWineBottle size="100px" color="whitesmoke" />
-        <FaWineGlassAlt size="100px" className="glass" color="whitesmoke" />
+        <FaWineGlassAlt size="10rem" className="glass" color="whitesmoke" />
+        <FaWineBottle size="10rem" color="whitesmoke" />
+        <FaWineGlassAlt size="10rem" className="glass" color="whitesmoke" />
       </div>
       <div className="two_right">
         <a href="/">El Adobe</a>

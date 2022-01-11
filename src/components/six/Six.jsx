@@ -8,7 +8,7 @@ const Six = () => {
       <div className="six_wrapper">
        <img src={balcony1} alt="" />
         <div className="six_content">
-          <h1>OUR SPACIOUS AND SUNNY DINING DECK IS NOW OPEN !</h1>
+          <h1>OUR SPACIOUS AND SUNNY DINING DECK IS NOW OPEN </h1>
           <h5>
             Time to enjoy the warmer weather and have Lunch, Dinner or Cocktails
             on our Brand New outdoor deck. Plenty of seating and beautiful

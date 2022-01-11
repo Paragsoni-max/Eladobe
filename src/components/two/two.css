@@ -18,11 +18,10 @@
 }
 
 .two_left {
-  width: 50%;
+  width: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 100px;
 }
 
 
@@ -32,27 +31,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: 200px;
-  padding: 0px 20px;
+  padding: 0px 2rem;
 }
 
 .two_right a {
-  padding: 4px 35px;
-  margin: 10px 0;
+  padding: .4rem 3.5rem;
+  margin: 1rem 0;
   background: whitesmoke;
   border-radius: 42px;
   font-weight: bold;
   color: #ce1125;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .two_right h1 {
   font-family: 'Merienda', cursive;
   font-style: normal;
   font-weight: bold;
-  font-size: 50px;
-  line-height: 92px;
-  margin: 20px 0;
+  font-size: 5rem;
+  line-height: 9.2rem;
+  margin: 2.0rem 0;
   color: whitesmoke;
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -61,10 +59,91 @@
 .two_right p {
   font-family: Source Sans Pro;
   font-style: normal;
+  font-weight: 580;
+  font-size: 1.7rem;
+  line-height: 3rem;
   width: 60%;
-  font-weight: bold;
-  font-size: 18px;
-  /* line-height: 30px; */
   color: whitesmoke;
   text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  html{
+    font-size: 55%;
+  }
+  .two_container{
+    height: auto;
+    padding: 10rem 0;
+    margin: 8rem 0 ;
+  }
+  .two_right p{
+    width: 80%;
+  }
+  
+}
+@media screen and (max-width: 850px) {
+  html{
+    font-size: 50%;
+  }
+  .two_container{
+    height: 70vh;
+  }
+  .two_right h1{
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+  .two_right p{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html{
+    font-size: 40%;
+  }
+  .two_container{
+    height :60vh;
+  }
+ .two_right p{
+   font-size: 2rem;
+}
+ .two_right a{
+   font-size: 2rem;
+}
+}
+
+@media screen and (max-width: 480px) {
+  html{
+    font-size: 30%;
+  }
+  .two_container{
+    height: 50vh;
+  }
+  .two_container .two_left{
+    display:none;
+  }
+  .two_container .two_right{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .two_container .two_right h1{
+    margin: 6rem 0;
+    font-size: 6rem;
+  }
+  .two_container .two_right p , .two_container .two_right a{
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  html{
+    font-size: 30%;
+  }
+  .two_container{
+    height: auto;
+    padding: 10rem 0;
+    margin: 5rem 0;
+  }
 }

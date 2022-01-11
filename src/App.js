@@ -22,7 +22,7 @@ function App() {
       <Five />
       <Six />
       <Seven />
-      <Footer />
+      <Footer /> 
     </>
   );
 }

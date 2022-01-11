@@ -2,51 +2,93 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
-}
-
-.seven_wrapper {
-  height: 100%;
-  width: 70%;
-  display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-around;
+  margin: 2rem 0;
 }
 
-.seven_wrapper .seven_heading {
+.seven_container .seven_heading {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.seven_wrapper .seven_heading span {
+.seven_container .seven_heading span {
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 2rem;
   text-align: center;
 }
 
-.seven_wrapper .seven_heading h1 {
+.seven_container .seven_heading h1 {
   font-family: Merienda;
   font-style: normal;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 4.5rem;
 
   text-align: center;
 }
 
-.seven_wrapper .seven_social_ss{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.seven_container .seven_social_ss {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.seven_wrapper .seven_social_ss .img{
-    width:270px;
-    height: 400px;
-    background: #FFFFFF;
-    object-fit: cover;
-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);}
+.seven_container .seven_social_ss .img {
+  width: 27rem;
+  height: 40rem;
+  background: #ffffff;
+  object-fit: cover;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+  .seven_container{
+    height: auto;
+    margin: 5rem 0;
+  }
+  .seven_container .seven_social_ss {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 50%;
+  }
+  .seven_container {
+    height: auto;
+    padding: 5rem 0;
+  }
+  .seven_container .seven_social_ss {
+    width: 100%;
+    padding: 5rem 0;
+  }
+  .seven_container .seven_social_ss .img {
+    width: 25rem;
+    height: 40rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 30%;
+  }
+  
+}
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 30%;
+  }
+}

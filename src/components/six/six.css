@@ -1,49 +1,122 @@
-.six_container{
-    width:100vw;
-    height:80vh;
-    background:linear-gradient(rgba(57, 150, 57, 0.9),rgba(0,128,0,0.7)), url("../../images/balcony.jpg");
- background-position:center;
+.six_container {
+  width: 100vw;
+  height: 80vh;
+  background: linear-gradient(rgba(57, 150, 57, 0.9), rgba(0, 128, 0, 0.7)),
+    url("../../images/balcony.jpg");
+  background-position: center;
   background-size: cover;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-.six_wrapper{
-    height: 100%;
-    width: 70%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.six_wrapper img{
-    width:220px;
-    height:325px;
+.six_wrapper {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-
-
-
-.six_wrapper .six_content{
-    width:40%;
-    padding: 20px;
+.six_wrapper img {
+  width: 22rem;
+  height: 32.5rem;
 }
 
-.six_wrapper .six_content h1{
-    font-family: Merienda;
-font-style: normal;
-font-weight: bold;
-font-size: 30px;
-text-align: center;
-color: #FFFFFF;
+.six_wrapper .six_content {
+  width: 40%;
+  padding: 2rem;
 }
 
-.six_wrapper .six_content h5{
+.six_wrapper .six_content h1 {
+  font-family: Merienda;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  color: #ffffff;
+}
 
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: normal;
-    margin-top: 40px;
-    font-size: 20px;
-    text-align: center;
-    color: #FFFFFF;
+.six_wrapper .six_content h5 {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 4rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+
+  .six_container{
+    height: 50vh;
+    margin:8rem 0;
+  }
+
+  .six_wrapper{
+      width: 85%;
+  }
+  .six_wrapper .six_content h5{
+      margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 50%;
+  }
+  .six_container{
+      height: auto;
+      padding:5rem
+  }
+  .six_container .six_content{
+      width: 60%;
+  }
+  .six_container .six_wrapper{
+      width: 100%;
+      padding:0 1rem;
+  }
+}
+
+@media screen and (max-width: 650px){
+    .six_container .six_content h1{
+        font-size: 2.5rem;
+    }
+    .six_container .six_content h5{
+        font-size: 1.5rem;
+    }
+    .six_wrapper img {
+        width: 20rem;
+        height: 30rem;
+      }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+  .six_container img{
+      display: none;
+  }
+  .six_container .six_content {
+      width: 100%;
+  }
+  .six_container .six_content h1{
+    font-size:4rem;
+}
+.six_container .six_content h5{
+    font-size: 3rem;
+}
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 30%;
+  }
 }
