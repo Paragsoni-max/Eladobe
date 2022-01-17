@@ -1,0 +1,135 @@
+.all_blogs {
+  margin: 4rem;
+  padding: 1rem;
+}
+
+.all_blogs .blog_header {
+  text-align: center;
+  margin: 3rem auto 5rem auto;
+}
+
+.all_blogs .blog_header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+}
+
+.blog_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.blog_list .single_blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  border: .5px solid rgb(204, 204, 204);
+  margin: 20px 10px;
+}
+.blog_list .single_blog:hover {
+  transition: .2s ease-in-out;
+  box-shadow: 10px 10px 5px 0px rgba(176, 169, 169, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(176, 169, 169, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(176, 169, 169, 0.75);
+}
+
+.blog_list .single_blog img {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 60%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.blog_list .single_blog h1 {
+  font-size: 2rem;
+  color: rgb(70, 70, 70);
+  font-weight: 650;
+  padding: 0 5px;
+  /* flex: 1; */
+}
+.blog_list .single_blog p {
+  font-size: 1.5rem;
+  padding: 0 5px;
+  font-weight: 400;
+  color: grey;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.blog_list .single_blog span {
+  text-align: center;
+  font-weight: 500;
+  color: black;
+}
+
+
+@media screen and (max-width: 850px) {
+  html{
+    font-size: 50%;
+  }
+  .two_container{
+    height: 70vh;
+  }
+  .two_right h1{
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+  .two_right p{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html{
+    font-size: 40%;
+  }
+  .blog_list{
+    justify-content: center;
+  }
+  .blog_list .single_blog h1{
+    font-size: 2rem;
+  }
+  .blog_list .single_blog p{
+    font-size: 1.8rem;
+  }
+  .blog_list .single_blog span{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html{
+    font-size: 30%;
+  }
+  .blog_list .single_blog h1{
+    font-size: 3rem;
+  }
+  .blog_list .single_blog p{
+    font-size: 2.5rem;
+  }
+  .blog_list .single_blog span{
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  html{
+    font-size: 30%;
+  }
+  .blog_list .single_blog h1{
+    font-size: 3rem;
+  }
+  .blog_list .single_blog p{
+    font-size: 2.5rem;
+  }
+  .blog_list .single_blog span{
+    font-size: 1rem;
+  }
+}

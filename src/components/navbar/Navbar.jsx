@@ -1,5 +1,6 @@
 import "./navbar.css";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -17,9 +18,9 @@ const Navbar = () => {
       </div>
 
       <div className="nav-links">
-        <a href="/" target="_blank">
+        <Link to="/" >
           Home
-        </a>
+        </Link>
         <a href="/" target="_blank">
           About Us
         </a>
@@ -29,9 +30,9 @@ const Navbar = () => {
         <a href="/" target="_blank">
           Catering & Events
         </a>
-        <a href="" target="_blank">
-          Giving Back
-        </a>
+        <Link to="/blogs" >
+          Blogs
+        </Link>
         <a href="/" target="_blank">
           Contact Us
         </a>
